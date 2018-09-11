@@ -6,7 +6,7 @@ The Dockerfile creates a static binary without any external dependencies. The re
 
 You can also pull this image directly from Docker Hub with `docker pull whiteblock/eosio`.
 
-I've included the Makefile and an example config.init for reference. I modified the build script for development and testing purposes and removed any hardcoded requirements for resource allocation.
+I've included the `Makefile` and an example `config.init` for reference. I also modified the build script for development and testing purposes and removed any hardcoded requirements for resource allocation.
 
 ## Dependencies: 
 - Boost

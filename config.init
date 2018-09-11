@@ -27,6 +27,4 @@ plugin = eosio::history_api_plugin
 http-server-address = localhost:8889
 p2p-listen-endpoint = localhost:9877
 agent-name = "EOS Test Agent"
-p2p-peer-address = 10.1.0.2:9876
-p2p-peer-address = 10.1.0.6:9876
-p2p-peer-address = 10.1.0.10:9876
+p2p-peer-address = localhost:9876

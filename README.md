@@ -79,7 +79,10 @@ Be sure to replace $CONTAINER with whatever your container name is. If you're no
 
 ### Config.ini
 
-In your `config.ini` file, along with whatever other values you wish to specify the path to this file as the value for `genesis-json = /$PATH`. Be sure to replace $PATH with the appropriate path. 
+In your `config.ini` file, along with whatever other values you wish to specify the path to this file as the value for `genesis-json = /$PATH`. Be sure to replace $PATH with the appropriate path.  
+
+THIS DOCUMENT IS STILL BEING EDITED. 
+
 
 
 

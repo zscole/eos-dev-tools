@@ -11,6 +11,9 @@ I've included the `Makefile` and an example `config.init` for reference. I also 
 If you have any issues, please feel free to share them here and if you have any questions, don't hesitate to [contact me on Telegram](https://t.me/zcole). 
 
 ## Dependencies
+
+These are provided here for reference and already included in the Docker image, if you're using that. 
+
 - Boost
 - Cmake
 - Clang

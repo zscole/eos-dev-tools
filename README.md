@@ -19,7 +19,7 @@ I've included the `Makefile` and an example `config.init` for reference. I also 
 ## Overview
 
 `nodesos` is the primary EOS client which allows users to implement different functionality within their node via the EOS plugin library.   
-`cleos` is the command line interface which acts as a bridge between the blockchain network and the user's local environment.  
+`cleos` is the command line interface which acts as a bridge between the blockchain network and the user's local environment via REST API.  
 `keosd` is a wallet management utility.    
 
 ### Plugins

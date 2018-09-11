@@ -26,8 +26,6 @@ If you have any issues, please feel free to share them here and if you have any 
  
 `keosd` is a wallet management utility. When creating a new wallet, the master password is output to the command line in hexadecimal format beginning with a PW prefix, like so: `PW5JQwauDUuAWFyCYdMCuqGRc28oN3PcPLivfWvBxkhjYZ7Gw53a8`. Be sure to save this because it won't be stored anywhere else.     
 
-Accounts 
-
 ### Plugins
 
 These plugins can either be specified for automatic implementation within the `config.ini` file or manually specified as a user flag when launching `nodeos`. 

@@ -47,7 +47,31 @@ These plugins can either be specified for automatic implementation within the `c
 
 - `cleos wallet create -n <name> --to-console` creates a new wallet and outputs to command line. 
 
-### Sending Tranactions
+## Starting A New Blockchain
+
+Starting a new blockchain for testing/development purposes is a great way to learn about how a system works in a safe and controlled environment.  
+The following instructions will help you get started and set up your own private environment. These instructions assume you're using the Dockerfile included in this repo and deploying your new blockchain network locally. 
+
+### Create A New Key
+
+To get started, you first need to create a new key via `cleos`, so run the following command:
+
+`cleos create key --to-console`
+
+The output will be a new public/private key pair. Here is an example of the expected output:
+
+`Private key: 5JW8h6Y69SgqpxiJAZdvr2QDtxs1VmHtSTtrZX5qwFPkgcb8pgL`  
+`Public key: EOS5sqheHF2NnJF1s4ZbfC4rsqWF7vVrqwTenbtHfY5mRgcJ9Xird`
+
+ The `--to-console` flag displays the output on the console, however, if you wish to output these values to a particular file, replace `--to-console` with `-f $filename` and change $filename to whatever file you'd like to save it as. 
+
+### Configure The Genesis File
+
+Every node in your network is going to reference a genesis node, which is the node that created the first block in the blockchain. Check out the genesis.json file in this repo and take note of two values - `initial_chain_id` and `initial_key`. Take the public key you generated in the step above and insert it as a string in the `initial_key` field. The `initial_key` field is arbitrary, but if you're planning on deploying multiple blockchains, it's best practice to assign a unique value to each build. The expected input is a hex string.
+
+
+
+
 
 
 

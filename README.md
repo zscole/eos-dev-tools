@@ -1,6 +1,6 @@
 # EOSIO Development Resources
 
-I had a lot of trouble finding adequate documentation and resources related to EOS development, so I put all of this together for my own use. 
+I had a lot of trouble finding adequate documentation and resources related to EOS development, so I put all of this together for my own use. The following presents some of the stuff I've figured out that wasn't entirely clear in the [documentation provided by EOS](https://developers.eos.io/).
 
 The Dockerfile creates a static binary without any external dependencies. The resulting image should be around 380mb in size and work out of the box as a vanilla EOS build.
 

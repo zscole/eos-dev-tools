@@ -67,9 +67,19 @@ The output will be a new public/private key pair. Here is an example of the expe
 
 ### Configure The Genesis File
 
-Every node in your network is going to reference a genesis node, which is the node that created the first block in the blockchain. Check out the genesis.json file in this repo and take note of two values - `initial_chain_id` and `initial_key`. Take the public key you generated in the step above and insert it as a string in the `initial_key` field. The `initial_key` field is arbitrary, but if you're planning on deploying multiple blockchains, it's best practice to assign a unique value to each build. The expected input is a hex string.
+Every node in your network is going to reference a genesis node, which is the node that created the first block in the blockchain. Check out the genesis.json file in this repo and take note of two values - `initial_chain_id` and `initial_key`. \
 
+Take the public key you generated in the previous step and insert it as a string in the `initial_key` field. The `initial_chain_id` field seems to be arbitrary, but if you're planning on deploying multiple blockchains, it's probably best practice to assign a unique value to each build for the sake of sanity. The expected input is a hex string. \
 
+Save your `genesis.json` file wherever you want. If you're running EOS in a docker container, `cd` into the directory where you saved it and run the following command to copy it over to the docker container:
+
+`docker cp genesis.json <$CONTAINER>:/genesis.json`
+
+Be sure to replace $CONTAINER with whatever your container name is. If you're not sure what the name of your container is, run `docker container ls` to check out a list of running containers. 
+
+### Config.ini
+
+In your `config.ini` file, along with whatever other values you wish to specify the path to this file as the value for `genesis-json = /$PATH`. Be sure to replace $PATH with the appropriate path. 
 
 
 

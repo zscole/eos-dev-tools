@@ -8,6 +8,8 @@ You can also pull this image directly from Docker Hub with `docker pull whiteblo
 
 I've included the `Makefile` and an example `config.init` for reference. I also modified the build script for development and testing purposes and removed any hardcoded requirements for resource allocation.
 
+If you have any issues, please feel free to share them here and if you have any questions, don't hesitate to [contact me on Telegram](https://t.me/zcole). 
+
 ## Dependencies: 
 - Boost
 - Cmake

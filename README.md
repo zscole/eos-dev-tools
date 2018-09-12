@@ -79,7 +79,7 @@ Be sure to replace $CONTAINER with whatever your container name is. If you're no
 
 ### Config.ini
 
-In your `config.ini` file, along with whatever other values you wish to specify the path to this file as the value for `genesis-json = /$PATH`. Be sure to replace $PATH with the appropriate path.  
+In your `config.ini` file, along with whatever other values you wish to specify the path to this file as the value for `genesis-json = /$PATH`. Be sure to replace $PATH with the appropriate path. Like you did with the genesis.json file, `cp` it into your Dockerfile. If you're going to use the same values in each build, it might be best to change the Dockerfile to copy your custom `config.ini` file from your host machine to container during the build process. 
 
 THIS DOCUMENT IS STILL BEING EDITED. 
 

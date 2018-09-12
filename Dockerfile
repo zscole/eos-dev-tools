@@ -24,6 +24,6 @@ COPY --from=builder /eos/contracts /
 
 ENV EOSIO_ROOT=/opt/eosio
 ENV PATH /opt/eosio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-EXPOSE 8889 8899
+EXPOSE 8889 8899 9876
 
 CMD ["/bin/bash"]

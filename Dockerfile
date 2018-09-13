@@ -9,7 +9,7 @@ RUN cmake -DBINARYEN_BIN=/eos/externals/binaryen/bin -DWASM_ROOT=/opt/wasm -DOPE
 
 FROM ubuntu:18.04
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install openssl ca-certificates
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install openssl ca-certificates curl
 
 COPY --from=builder /usr/local/eosio/bin/ /opt/eosio/bin
 COPY --from=builder /eos/contracts /  
